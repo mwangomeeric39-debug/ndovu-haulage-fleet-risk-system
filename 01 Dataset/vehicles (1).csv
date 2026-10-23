@@ -1,0 +1,41 @@
+vehicle_id,reg_no,make,model,vehicle_class,year,tank_capacity_l,depot
+V001,KBZ 123A,FAW,J6P 6x4,Tractor-Trailer,2022,500,Mombasa
+V002,KCM 911D,Scania,R450,Tractor-Trailer,2023,600,Nairobi
+V003,KXB 781M,Mercedes-Benz,Actros 2645,Tractor-Trailer,2022,600,Nairobi
+V004,KDR 185R,Mercedes-Benz,Actros 2645,Tractor-Trailer,2021,600,Mombasa
+V005,KBG 544E,Isuzu,FVZ 1400,Rigid,2016,300,Nairobi
+V006,KYZ 622L,Volvo,FH 460,Tractor-Trailer,2018,600,Nairobi
+V007,KGZ 475M,MAN,TGS 26.440,Tractor-Trailer,2019,500,Mombasa
+V008,KNT 541L,Volvo,FH 460,Tractor-Trailer,2024,600,Nairobi
+V009,KWJ 957H,MAN,TGS 26.440,Tractor-Trailer,2020,500,Nairobi
+V010,KBL 842A,Volvo,FH 460,Tractor-Trailer,2023,600,Mombasa
+V011,KKD 698S,Scania,R450,Tractor-Trailer,2016,600,Nairobi
+V012,KUY 791H,Isuzu,FVZ 1400,Rigid,2016,300,Nairobi
+V013,KHB 226P,FAW,J6P 6x4,Tractor-Trailer,2020,500,Mombasa
+V014,KWZ 385E,Mercedes-Benz,Actros 2645,Tractor-Trailer,2024,600,Nairobi
+V015,KYJ 991Y,Volvo,FH 460,Tractor-Trailer,2016,600,Nairobi
+V016,KMZ 992D,Volvo,FH 460,Tractor-Trailer,2023,600,Mombasa
+V017,KHX 204N,Isuzu,FVZ 1400,Rigid,2019,300,Nairobi
+V018,KTM 435X,Mercedes-Benz,Actros 2645,Tractor-Trailer,2015,600,Nairobi
+V019,KBY 952F,Isuzu,FVZ 1400,Rigid,2015,300,Mombasa
+V020,KGU 261J,FAW,J6P 6x4,Tractor-Trailer,2017,500,Nairobi
+V021,KZN 550L,Volvo,FH 460,Tractor-Trailer,2016,600,Nairobi
+V022,KJD 116S,Scania,R450,Tractor-Trailer,2024,600,Mombasa
+V023,KTV 622L,FAW,J6P 6x4,Tractor-Trailer,2016,500,Nairobi
+V024,KCU 842D,Isuzu,FVZ 1400,Rigid,2019,300,Nairobi
+V025,KLZ 370D,Scania,R450,Tractor-Trailer,2019,600,Mombasa
+V026,KPJ 963Y,MAN,TGS 26.440,Tractor-Trailer,2019,500,Nairobi
+V027,KSW 195T,Scania,R450,Tractor-Trailer,2016,600,Nairobi
+V028,KGR 263Y,Mercedes-Benz,Actros 2645,Tractor-Trailer,2022,600,Mombasa
+V029,KJW 325V,Scania,R450,Tractor-Trailer,2021,600,Nairobi
+V030,KJM 206J,FAW,J6P 6x4,Tractor-Trailer,2024,500,Nairobi
+V031,KXJ 508N,FAW,J6P 6x4,Tractor-Trailer,2017,500,Mombasa
+V032,KWW 962C,Volvo,FH 460,Tractor-Trailer,2023,600,Nairobi
+V033,KDG 841H,Mercedes-Benz,Actros 2645,Tractor-Trailer,2018,600,Nairobi
+V034,KRG 240G,Scania,R450,Tractor-Trailer,2020,600,Mombasa
+V035,KBU 149E,MAN,TGS 26.440,Tractor-Trailer,2016,500,Nairobi
+V036,KPT 821K,Scania,R450,Tractor-Trailer,2023,600,Nairobi
+V037,KNG 899F,FAW,J6P 6x4,Tractor-Trailer,2017,500,Mombasa
+V038,KMJ 144A,FAW,J6P 6x4,Tractor-Trailer,2018,500,Nairobi
+V039,KCW 195B,MAN,TGS 26.440,Tractor-Trailer,2023,500,Nairobi
+V040,KKW 620U,FAW,J6P 6x4,Tractor-Trailer,2021,500,Mombasa

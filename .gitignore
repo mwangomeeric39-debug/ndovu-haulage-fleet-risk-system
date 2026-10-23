@@ -1,0 +1,27 @@
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+*credentials*
+*secret*
+*token*
+*.pem
+*.key
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary output
+*.log
+*.tmp

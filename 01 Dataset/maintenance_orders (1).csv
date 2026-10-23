@@ -1,0 +1,137 @@
+wo_id,vehicle_id,wo_type,opened_ts,closed_ts,workshop,root_cause,parts_used,parts_cost_usd,labour_cost_usd,recovery_cost_usd
+WO00001,V001,Scheduled,2026-07-10 13:34:27,2026-07-10 22:18:29,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,727.0,240.57,0.0
+WO00002,V001,Emergency,2026-07-20 19:47:14,2026-07-21 07:51:35,Roadside Vendor,Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,2299.03,245.78,1009.77
+WO00003,V001,Scheduled,2026-08-08 07:54:17,2026-08-08 19:31:22,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,724.57,126.66,0.0
+WO00004,V001,Emergency,2026-08-29 17:02:18,2026-08-30 10:51:14,Roadside Vendor,Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,3565.77,406.76,630.63
+WO00005,V001,Scheduled,2026-09-08 07:47:05,2026-09-08 15:27:29,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,713.61,192.96,0.0
+WO00006,V002,Scheduled,2026-07-08 13:09:19,2026-07-09 07:06:41,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,511.15,229.81,0.0
+WO00007,V002,Emergency,2026-08-01 01:43:51,2026-08-02 00:36:10,Nairobi Depot (towed),Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,1686.94,422.05,425.08
+WO00008,V002,Scheduled,2026-08-05 03:31:25,2026-08-05 13:46:14,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,754.55,245.99,0.0
+WO00009,V002,Scheduled,2026-09-06 14:42:23,2026-09-07 00:05:08,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,405.01,138.23,0.0
+WO00010,V002,Emergency,2026-09-12 18:59:41,2026-09-14 04:48:42,Nairobi Depot (towed),Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,3597.49,565.88,915.61
+WO00011,V003,Scheduled,2026-07-12 18:26:21,2026-07-13 08:23:14,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,400.55,202.18,0.0
+WO00012,V003,Scheduled,2026-08-11 01:22:51,2026-08-11 08:53:31,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,195.87,91.78,0.0
+WO00013,V003,Scheduled,2026-09-12 15:37:34,2026-09-13 05:29:33,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,724.3,119.34,0.0
+WO00014,V004,Scheduled,2026-07-03 23:44:52,2026-07-04 12:32:38,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,298.6,150.56,0.0
+WO00015,V004,Scheduled,2026-08-01 12:20:49,2026-08-02 02:54:36,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,727.71,183.66,0.0
+WO00016,V004,Scheduled,2026-09-02 01:00:01,2026-09-02 12:58:54,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,884.56,213.36,0.0
+WO00017,V005,Scheduled,2026-07-07 01:34:44,2026-07-07 20:49:25,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,569.51,121.12,0.0
+WO00018,V005,Emergency,2026-07-30 03:02:49,2026-07-30 14:59:43,Roadside Vendor,Radiator hose burst / coolant leak,Radiator hose kit; coolant 20L; thermostat,1698.76,596.14,664.99
+WO00019,V005,Scheduled,2026-08-04 20:44:40,2026-08-05 07:47:25,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,443.18,209.33,0.0
+WO00020,V005,Scheduled,2026-09-01 23:18:10,2026-09-02 09:00:47,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,275.45,217.96,0.0
+WO00021,V005,Emergency,2026-09-11 02:09:40,2026-09-11 13:06:03,Roadside Vendor,Radiator hose burst / coolant leak,Radiator hose kit; coolant 20L; thermostat,1056.06,543.15,303.98
+WO00022,V006,Scheduled,2026-07-05 01:12:26,2026-07-05 18:35:19,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,339.98,215.39,0.0
+WO00023,V006,Scheduled,2026-08-05 08:05:17,2026-08-05 21:07:57,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,860.14,124.85,0.0
+WO00024,V006,Scheduled,2026-09-06 12:01:24,2026-09-07 01:14:42,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,564.6,182.91,0.0
+WO00025,V007,Scheduled,2026-07-05 20:16:10,2026-07-06 04:12:11,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,687.41,88.59,0.0
+WO00026,V007,Scheduled,2026-08-06 10:13:41,2026-08-06 19:49:40,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,786.75,206.65,0.0
+WO00027,V007,Scheduled,2026-09-07 03:19:47,2026-09-07 20:37:58,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,439.51,148.59,0.0
+WO00028,V008,Scheduled,2026-07-07 00:29:07,2026-07-07 14:09:14,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,770.14,205.96,0.0
+WO00029,V008,Scheduled,2026-08-04 11:16:29,2026-08-05 06:39:49,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,692.61,244.13,0.0
+WO00030,V008,Scheduled,2026-09-05 13:19:19,2026-09-06 03:00:46,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,443.93,203.7,0.0
+WO00031,V009,Scheduled,2026-07-03 09:20:49,2026-07-04 03:57:55,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,311.36,92.93,0.0
+WO00032,V009,Scheduled,2026-08-03 09:17:16,2026-08-04 03:46:11,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,839.65,82.27,0.0
+WO00033,V009,Scheduled,2026-09-02 12:22:50,2026-09-02 20:26:33,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,305.77,139.48,0.0
+WO00034,V010,Scheduled,2026-07-14 04:38:04,2026-07-14 23:56:37,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,736.73,176.26,0.0
+WO00035,V010,Scheduled,2026-08-11 07:18:35,2026-08-12 00:52:34,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,421.62,130.31,0.0
+WO00036,V010,Scheduled,2026-09-08 09:41:44,2026-09-08 21:46:12,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,529.9,222.84,0.0
+WO00037,V011,Scheduled,2026-07-22 19:11:15,2026-07-23 13:09:10,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,213.0,191.98,0.0
+WO00038,V011,Scheduled,2026-08-19 20:37:01,2026-08-20 11:20:39,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,381.79,201.71,0.0
+WO00039,V011,Scheduled,2026-09-19 03:31:44,2026-09-19 13:13:27,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,539.12,232.8,0.0
+WO00040,V012,Scheduled,2026-07-22 10:07:22,2026-07-23 00:54:48,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,697.55,161.17,0.0
+WO00041,V012,Scheduled,2026-08-20 04:51:37,2026-08-20 17:07:05,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,391.39,98.34,0.0
+WO00042,V012,Scheduled,2026-09-21 23:47:00,2026-09-22 06:33:45,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,623.44,187.38,0.0
+WO00043,V013,Scheduled,2026-07-10 23:56:13,2026-07-11 17:53:33,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,380.99,157.57,0.0
+WO00044,V013,Scheduled,2026-08-10 09:35:57,2026-08-11 04:54:21,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,769.95,131.88,0.0
+WO00045,V013,Scheduled,2026-09-09 01:31:48,2026-09-09 21:23:16,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,334.1,177.29,0.0
+WO00046,V014,Scheduled,2026-07-26 01:05:38,2026-07-26 11:49:23,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,328.02,235.24,0.0
+WO00047,V014,Scheduled,2026-08-25 04:12:47,2026-08-25 10:21:16,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,358.29,229.15,0.0
+WO00048,V014,Scheduled,2026-09-24 02:17:10,2026-09-24 15:04:28,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,892.31,193.53,0.0
+WO00049,V015,Scheduled,2026-07-05 04:46:28,2026-07-05 12:58:18,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,797.23,95.32,0.0
+WO00050,V015,Scheduled,2026-08-02 06:33:19,2026-08-02 16:15:21,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,594.12,183.68,0.0
+WO00051,V015,Scheduled,2026-08-30 15:20:43,2026-08-31 03:24:30,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,280.04,131.76,0.0
+WO00052,V016,Scheduled,2026-07-03 11:46:08,2026-07-04 00:47:36,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,562.43,109.02,0.0
+WO00053,V016,Scheduled,2026-08-01 21:29:41,2026-08-02 11:12:52,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,488.54,145.12,0.0
+WO00054,V016,Scheduled,2026-09-02 21:30:33,2026-09-03 07:20:40,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,167.15,99.86,0.0
+WO00055,V017,Scheduled,2026-07-10 19:06:48,2026-07-11 12:10:39,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,159.8,228.96,0.0
+WO00056,V017,Scheduled,2026-08-11 14:49:16,2026-08-12 08:53:37,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,742.32,140.28,0.0
+WO00057,V017,Scheduled,2026-09-11 18:06:13,2026-09-12 06:19:48,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,494.36,108.38,0.0
+WO00058,V018,Scheduled,2026-07-09 02:14:54,2026-07-09 11:13:06,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,777.45,123.77,0.0
+WO00059,V018,Scheduled,2026-08-07 03:29:30,2026-08-07 11:12:11,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,559.18,220.73,0.0
+WO00060,V018,Scheduled,2026-09-05 21:08:37,2026-09-06 08:24:22,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,614.58,218.64,0.0
+WO00061,V019,Scheduled,2026-07-22 00:54:06,2026-07-22 13:42:53,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,535.92,130.35,0.0
+WO00062,V019,Scheduled,2026-08-22 13:35:53,2026-08-23 07:48:31,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,788.13,240.21,0.0
+WO00063,V019,Scheduled,2026-09-22 15:35:15,2026-09-23 10:22:03,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,520.59,213.22,0.0
+WO00064,V020,Scheduled,2026-07-09 05:15:00,2026-07-10 00:06:51,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,659.38,227.01,0.0
+WO00065,V020,Emergency,2026-07-31 23:12:16,2026-08-02 00:19:18,Nairobi Depot (towed),Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,2885.5,544.08,839.24
+WO00066,V020,Scheduled,2026-08-10 14:35:29,2026-08-11 08:27:04,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,773.51,131.75,0.0
+WO00067,V020,Emergency,2026-08-23 10:32:19,2026-08-24 19:14:48,Nairobi Depot (towed),Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,1285.27,359.09,707.71
+WO00068,V020,Scheduled,2026-09-08 00:19:20,2026-09-08 19:41:44,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,736.82,207.92,0.0
+WO00069,V021,Scheduled,2026-07-15 20:47:06,2026-07-16 08:38:04,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,285.86,93.7,0.0
+WO00070,V021,Scheduled,2026-08-16 09:01:38,2026-08-17 03:09:25,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,179.2,178.08,0.0
+WO00071,V021,Scheduled,2026-09-16 05:26:08,2026-09-16 12:13:02,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,154.87,171.33,0.0
+WO00072,V022,Scheduled,2026-07-13 08:25:56,2026-07-13 18:35:22,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,648.9,126.26,0.0
+WO00073,V022,Scheduled,2026-08-11 10:20:58,2026-08-12 05:31:01,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,173.96,175.9,0.0
+WO00074,V022,Scheduled,2026-09-09 08:40:53,2026-09-10 04:34:12,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,881.69,196.98,0.0
+WO00075,V023,Scheduled,2026-07-22 07:14:39,2026-07-22 18:53:38,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,822.25,207.4,0.0
+WO00076,V023,Scheduled,2026-08-20 12:59:35,2026-08-21 00:19:02,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,461.17,163.6,0.0
+WO00077,V023,Scheduled,2026-09-20 21:58:31,2026-09-21 14:01:52,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,600.0,187.54,0.0
+WO00078,V024,Scheduled,2026-07-16 02:11:19,2026-07-16 10:29:46,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,817.17,182.7,0.0
+WO00079,V024,Scheduled,2026-08-16 14:12:41,2026-08-17 02:13:07,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,819.93,86.93,0.0
+WO00080,V024,Scheduled,2026-09-16 08:46:13,2026-09-17 02:41:11,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,656.14,98.65,0.0
+WO00081,V025,Scheduled,2026-07-16 05:41:33,2026-07-16 13:13:46,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,429.68,111.36,0.0
+WO00082,V025,Scheduled,2026-08-14 09:53:05,2026-08-15 02:11:28,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,351.04,165.91,0.0
+WO00083,V025,Scheduled,2026-09-12 05:48:18,2026-09-12 16:02:45,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,527.87,86.57,0.0
+WO00084,V026,Scheduled,2026-07-12 07:41:59,2026-07-12 20:42:16,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,166.31,133.83,0.0
+WO00085,V026,Scheduled,2026-08-12 11:13:39,2026-08-13 05:01:13,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,569.93,150.28,0.0
+WO00086,V026,Scheduled,2026-09-12 20:08:59,2026-09-13 07:19:50,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,824.43,209.19,0.0
+WO00087,V027,Scheduled,2026-07-09 08:06:45,2026-07-09 17:36:08,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,691.63,228.9,0.0
+WO00088,V027,Scheduled,2026-08-06 12:04:50,2026-08-07 00:57:05,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,858.28,119.17,0.0
+WO00089,V027,Scheduled,2026-09-04 06:34:15,2026-09-05 00:26:44,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,541.31,164.34,0.0
+WO00090,V028,Scheduled,2026-07-20 15:11:57,2026-07-21 01:41:17,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,280.57,221.49,0.0
+WO00091,V028,Emergency,2026-08-02 20:42:38,2026-08-03 08:39:05,Roadside Vendor,Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,1857.48,233.01,598.75
+WO00092,V028,Scheduled,2026-08-19 22:24:11,2026-08-20 14:43:23,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,533.99,94.24,0.0
+WO00093,V028,Emergency,2026-09-05 15:01:15,2026-09-06 01:34:24,Roadside Vendor,Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,3297.57,460.93,1059.47
+WO00094,V028,Scheduled,2026-09-17 00:27:04,2026-09-17 09:51:07,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,527.76,199.77,0.0
+WO00095,V029,Scheduled,2026-07-15 12:06:36,2026-07-16 03:17:06,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,659.13,91.56,0.0
+WO00096,V029,Emergency,2026-07-19 08:06:52,2026-07-20 03:30:57,Roadside Vendor,Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,2611.64,206.23,1046.71
+WO00097,V029,Scheduled,2026-08-13 18:35:01,2026-08-14 10:31:51,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,156.05,253.68,0.0
+WO00098,V029,Emergency,2026-09-06 18:06:43,2026-09-07 06:43:42,Roadside Vendor,Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,3151.92,634.11,825.38
+WO00099,V029,Scheduled,2026-09-13 06:44:21,2026-09-13 21:19:50,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,304.74,172.21,0.0
+WO00100,V030,Scheduled,2026-07-15 13:53:35,2026-07-16 01:02:25,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,209.48,259.7,0.0
+WO00101,V030,Scheduled,2026-08-14 21:16:54,2026-08-15 15:26:25,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,715.05,251.17,0.0
+WO00102,V030,Scheduled,2026-09-14 15:46:49,2026-09-15 05:34:06,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,192.27,105.86,0.0
+WO00103,V031,Scheduled,2026-07-27 10:35:48,2026-07-28 03:02:53,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,750.34,106.88,0.0
+WO00104,V031,Scheduled,2026-08-24 14:53:48,2026-08-25 04:28:51,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,236.57,175.44,0.0
+WO00105,V031,Scheduled,2026-09-22 09:17:17,2026-09-22 20:26:44,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,679.55,155.28,0.0
+WO00106,V032,Scheduled,2026-07-25 00:41:42,2026-07-25 09:22:10,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,810.87,204.06,0.0
+WO00107,V032,Scheduled,2026-08-23 01:37:44,2026-08-23 18:04:21,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,612.36,225.09,0.0
+WO00108,V032,Scheduled,2026-09-23 06:20:47,2026-09-23 22:57:07,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,476.43,225.02,0.0
+WO00109,V033,Scheduled,2026-07-12 05:19:05,2026-07-12 17:44:59,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,381.64,208.01,0.0
+WO00110,V033,Scheduled,2026-08-12 02:11:01,2026-08-12 20:43:57,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,507.72,242.22,0.0
+WO00111,V033,Scheduled,2026-09-13 05:30:16,2026-09-13 17:26:00,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,876.92,87.35,0.0
+WO00112,V034,Scheduled,2026-07-01 10:39:29,2026-07-02 02:58:14,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,296.31,169.39,0.0
+WO00113,V034,Scheduled,2026-08-02 14:59:22,2026-08-03 00:08:37,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,533.35,181.51,0.0
+WO00114,V034,Scheduled,2026-09-04 00:47:30,2026-09-04 14:04:35,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,244.19,111.93,0.0
+WO00115,V035,Scheduled,2026-07-07 09:47:22,2026-07-07 19:34:57,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,632.21,237.32,0.0
+WO00116,V035,Scheduled,2026-08-06 17:30:29,2026-08-07 07:27:17,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,234.55,124.16,0.0
+WO00117,V035,Scheduled,2026-09-07 14:38:11,2026-09-08 07:22:46,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,283.82,243.28,0.0
+WO00118,V036,Emergency,2026-07-22 16:26:51,2026-07-24 01:28:12,Nairobi Depot (towed),Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,3183.17,658.0,979.24
+WO00119,V036,Scheduled,2026-07-24 10:47:34,2026-07-25 00:15:21,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,583.37,160.11,0.0
+WO00120,V036,Scheduled,2026-08-21 14:53:44,2026-08-21 23:45:04,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,868.59,134.97,0.0
+WO00121,V036,Emergency,2026-09-07 21:29:29,2026-09-08 17:06:44,Roadside Vendor,Gearbox / clutch failure,Clutch kit; gearbox oil 25L; transmission sensor,2699.91,224.37,487.19
+WO00122,V036,Scheduled,2026-09-20 14:00:30,2026-09-21 08:56:27,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,172.03,255.23,0.0
+WO00123,V037,Scheduled,2026-07-25 08:57:13,2026-07-26 02:26:16,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,626.55,140.3,0.0
+WO00124,V037,Scheduled,2026-08-23 21:36:46,2026-08-24 05:53:14,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,752.14,250.43,0.0
+WO00125,V037,Scheduled,2026-09-24 00:13:39,2026-09-24 10:58:15,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,894.6,128.84,0.0
+WO00126,V038,Scheduled,2026-07-29 03:07:13,2026-07-29 09:08:09,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,447.29,98.31,0.0
+WO00127,V038,Scheduled,2026-08-30 01:08:09,2026-08-30 10:36:42,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,474.93,144.64,0.0
+WO00128,V038,Scheduled,2026-09-29 16:45:40,2026-09-30 02:09:48,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,486.16,85.41,0.0
+WO00129,V039,Scheduled,2026-07-09 06:52:17,2026-07-09 15:06:40,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,540.25,116.34,0.0
+WO00130,V039,Emergency,2026-08-06 20:25:21,2026-08-07 20:54:30,Nairobi Depot (towed),Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,2097.61,411.22,736.69
+WO00131,V039,Scheduled,2026-08-08 09:13:59,2026-08-09 01:04:15,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,794.13,154.49,0.0
+WO00132,V039,Emergency,2026-08-24 20:08:27,2026-08-25 07:56:23,Roadside Vendor,Oil pump / pressure loss,Oil pump assembly; oil filter; engine oil 40L,2325.09,483.57,595.24
+WO00133,V039,Scheduled,2026-09-07 02:53:09,2026-09-07 19:59:56,Mombasa Depot,Scheduled service (A/B),Oil & filters; brake inspection,654.27,202.66,0.0
+WO00134,V040,Scheduled,2026-07-23 22:54:36,2026-07-24 13:39:59,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,301.11,255.09,0.0
+WO00135,V040,Scheduled,2026-08-21 04:48:42,2026-08-21 14:25:37,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,391.36,113.02,0.0
+WO00136,V040,Scheduled,2026-09-20 08:48:55,2026-09-20 19:49:24,Nairobi Depot,Scheduled service (A/B),Oil & filters; brake inspection,892.05,135.85,0.0

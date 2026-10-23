@@ -1,0 +1,427 @@
+# Ndovu Haulage — Fleet Risk Intelligence System
+
+**An End-to-End Data Engineering, Business Intelligence & AI Project**
+
+## 1. Project Overview
+
+Ndovu Haulage is a fictional Kenyan trucking company operating a fleet of 40 trucks. Managing vehicle availability, fuel consumption, maintenance, driver performance, and delivery deadlines requires more than traditional reporting.
+
+This project demonstrates how to build a Fleet Risk Intelligence System that transforms operational data into actionable business intelligence.
+
+The solution integrates data engineering, SQL-based risk detection, Power BI reporting, workflow automation, and AI-generated explanations to help fleet managers identify emerging operational risks and prioritize appropriate action.
+
+**Core principle:** Move beyond reporting what happened to identifying what needs attention and supporting the next business action.
+
+## 2. Business Problem
+
+Fleet operators can face several interconnected challenges:
+
+- **Unexpected breakdowns:** Vehicles may develop faults that disrupt deliveries and increase repair costs.
+- **Fuel irregularities:** Unusual fuel consumption or discrepancies between fuel-card transactions and tank measurements may indicate waste, leakage, recording errors, or possible fraud.
+- **Poor dispatch decisions:** Vehicles with unresolved faults may be assigned trips before their condition is reviewed.
+- **Delivery delays:** Excessive idle time, inefficient routes, and vehicle problems can affect delivery performance.
+- **Limited operational visibility:** Managers may struggle to identify high-risk vehicles and prioritize cases from multiple data sources.
+- **Slow follow-up:** Risk information may not reach the responsible person quickly enough to support timely intervention.
+
+The project addresses these challenges by connecting data processing, risk detection, reporting, and operational follow-up in one workflow.
+
+## 3. Project Objectives
+
+1. Build a structured data pipeline for fleet operations.
+2. Transform raw operational records into reliable, business-ready datasets.
+3. Detect potential vehicle, fuel, maintenance, and delivery risks using explainable rules.
+4. Present fleet performance and risk indicators in Power BI.
+5. Automate selected alerts and notifications using n8n.
+6. Use Gemini AI to summarize detected risks and explain the supporting evidence.
+7. Support human review and follow-up through alert and case records.
+
+## 4. Technology Stack
+
+| Technology | Responsibility |
+|---|---|
+| Databricks | Data processing, SQL transformations, and analytical storage |
+| SQL | Data modeling, operational metrics, and risk detection |
+| PySpark / Spark SQL | Scalable transformation and processing where required |
+| Delta tables | Structured analytical data storage |
+| Power BI | Fleet performance dashboards and risk monitoring |
+| n8n | Workflow orchestration, scheduled checks, and notifications |
+| Gemini AI | Natural-language explanations of detected risks |
+| Email | Delivery of operational risk notifications |
+
+The implementation emphasizes clear separation between data preparation, risk detection, visualization, and automated communication.
+
+## 5. System Architecture
+
+<escape>
+Fleet Operational Data
+        ↓
+Databricks Bronze Layer
+        ↓
+Databricks Silver Layer
+        ↓
+Databricks Gold Layer
+        ↓
+SQL Risk Detection Engine
+        ↓
+Power BI Dashboards + n8n Workflows
+        ↓
+Gemini AI Risk Explanation
+        ↓
+Email Alert and Case Tracking
+        ↓
+Human Review and Operational Action
+</escape>
+
+### How the architecture works
+
+**Step 1 — Data ingestion**
+
+Fleet records such as vehicle telemetry, trip information, fuel transactions, driver records, and maintenance events enter the data platform.
+
+**Step 2 — Data cleaning**
+
+The Silver layer standardizes and validates the data so downstream calculations use consistent records.
+
+**Step 3 — Business modeling**
+
+The Gold layer organizes the cleaned data into dimensions, facts, intermediate models, and reporting marts.
+
+**Step 4 — Risk detection**
+
+SQL rules evaluate operational conditions and identify cases requiring attention.
+
+**Step 5 — Reporting and automation**
+
+Power BI provides visibility into fleet performance and risk. n8n retrieves eligible alerts and orchestrates notifications and follow-up workflows.
+
+**Step 6 — AI-assisted explanation**
+
+Gemini converts the evidence produced by the risk engine into a concise explanation for the recipient.
+
+**Step 7 — Human action**
+
+A responsible fleet manager reviews the evidence, investigates the case, and determines the appropriate action.
+
+*Important design principle:* SQL rules determine whether a risk condition exists. Gemini explains the supplied evidence; it is not the authoritative risk detector.
+
+## 6. Data Engineering Architecture
+
+### 6.1 Bronze Layer — Raw Data
+
+The Bronze layer stores ingested source records with minimal transformation.
+
+Potential source datasets include:
+
+- Vehicle master records
+- Driver records
+- Trip and dispatch records
+- GPS and vehicle telemetry
+- Fuel-card transactions
+- Tank sensor readings
+- Maintenance and repair records
+- Route and delivery information
+
+**Purpose:** Preserve the source data and provide a foundation for downstream processing and investigation.
+
+### 6.2 Silver Layer — Cleaned Data
+
+The Silver layer prepares the source records for reliable analytical use.
+
+Typical responsibilities include:
+
+- Standardizing data types and timestamps
+- Cleaning identifiers and categorical values
+- Handling missing and invalid records
+- Identifying duplicates
+- Validating relationships between vehicles, drivers, trips, and transactions
+- Preparing consistent operational records for analysis
+
+**Purpose:** Make the data trustworthy enough for business calculations and risk detection.
+
+### 6.3 Gold Layer — Business-Ready Data
+
+The Gold layer contains models designed around fleet management questions.
+
+**Dimensions**
+
+| Model | Purpose |
+|---|---|
+| `gold.dim_vehicle` | Vehicle attributes, registration, make, model, capacity, and depot |
+| `gold.dim_driver` | Driver reference information |
+| `gold.dim_route` | Route attributes and reference information |
+| `gold.dim_date` | Calendar attributes for time-based analysis |
+
+**Intermediate and fact models**
+
+| Model | Purpose |
+|---|---|
+| `gold.int_trip_metrics` | Trip-level metrics such as idle time and moving speed |
+| `gold.ref_burn_baseline` | Reference fuel-consumption benchmarks |
+| `gold.fact_trip` | Trip performance and operational outcomes |
+| `gold.fact_fuel_txn` | Fuel-card transaction records |
+| `gold.fact_fuel_event` | Fuel-related events and detected irregularities |
+| `gold.fact_maintenance` | Maintenance and repair events |
+
+**Operational marts and KPIs**
+
+| Model | Purpose |
+|---|---|
+| `gold.vehicle_daily_availability` | Vehicle availability over time |
+| `gold.driver_scorecard` | Driver performance indicators |
+| `gold.route_efficiency` | Route performance and efficiency |
+| `gold.kpi_daily_fleet` | Daily fleet-level business indicators |
+| `gold.vehicle_health_snapshot` | Historical vehicle health assessments |
+| `gold.vehicle_health_current` | Latest vehicle health view |
+| `gold.failure_risk_score` | Vehicle failure-risk estimates |
+| `gold.fuel_alert_queue` | Fuel-related cases requiring review |
+| `gold.risk_alert_queue` | Consolidated operational alert queue |
+
+Exact schemas and refresh behavior depend on the implemented SQL definitions.
+
+## 7. Risk Detection Engine
+
+The risk engine converts business rules and operational measurements into cases that managers can investigate.
+
+### 7.1 Vehicle Health and Maintenance Risk
+
+Vehicle health indicators are used to highlight trucks that may need inspection or maintenance.
+
+Possible evidence includes:
+
+- Active or unresolved fault records
+- Recent breakdowns
+- Deteriorating vehicle-health indicators
+- Maintenance history
+- Abnormal operating conditions
+
+A failure-risk score can help prioritize vehicles for review over a defined prediction horizon, such as the next 48 hours.
+
+**Business outcome:** Help fleet managers prioritize preventive inspection and reduce avoidable disruption.
+
+A risk score is an estimate, not a guarantee that a vehicle will fail.
+
+### 7.2 Fuel Anomaly Detection
+
+Fuel consumption is evaluated against an appropriate baseline rather than relying on one fixed threshold for every truck.
+
+The baseline can account for factors such as:
+
+- Route
+- Vehicle make and model
+- Trip load or operating conditions
+- Historical fuel consumption
+
+Fuel-card transaction volumes can also be compared with available tank-sensor measurements.
+
+Potential indicators include unusually high consumption, unexplained discrepancies, or suspicious refueling patterns.
+
+**Business outcome:** Identify transactions and trips that warrant fuel-efficiency checks or further investigation.
+
+An anomaly is not proof of theft. Sensor errors, route conditions, missing data, and recording differences must also be considered.
+
+### 7.3 Dispatch Readiness
+
+Dispatch logic evaluates whether a vehicle should be classified as:
+
+- **CLEAR:** No blocking condition was identified by the configured rules.
+- **RESTRICT:** A condition requires additional review or a limitation.
+- **LOCK:** A configured blocking condition prevents normal dispatch approval.
+
+The rules should use explicit operational criteria, including relevant unresolved faults and vehicle-readiness conditions.
+
+**Business outcome:** Support safer, more consistent dispatch decisions.
+
+These classifications are decision-support outputs; actual dispatch restrictions should follow the company's approved operational and safety procedures.
+
+### 7.4 Delivery and Trip Performance
+
+Trip-level metrics can reveal:
+
+- Excessive idle time
+- Low or unusual moving speeds
+- Delivery SLA breaches
+- Breakdown-related interruptions
+- Route inefficiencies
+
+**Business outcome:** Help operations teams investigate delivery delays and identify opportunities to improve fleet utilization.
+
+## 8. Power BI Reporting
+
+The Power BI layer provides an operational view of fleet health, performance, and emerging risks.
+
+### Executive Overview
+
+Designed to answer: *What requires management attention today?*
+
+Potential KPIs include:
+
+- Total fleet size
+- Vehicles classified as high risk
+- Average vehicle-health score
+- Dispatch-ready vehicles
+- High-priority operational alerts
+- Fuel alerts requiring investigation
+
+### Fuel Risk Analysis
+
+Designed to answer: *Where are fuel-related irregularities occurring?*
+
+Possible analysis includes:
+
+- Fuel consumption against baseline
+- Fuel-card and tank-measurement discrepancies
+- Fuel events by vehicle and route
+- Trends in anomalies over time
+
+### Fleet Operations
+
+Designed to answer: *Which operational issues are affecting vehicle availability and delivery performance?*
+
+Possible analysis includes:
+
+- Vehicle availability
+- Maintenance and breakdown trends
+- Trip performance and delivery delays
+- Driver and route performance
+- Dispatch readiness
+
+Power BI provides visibility into the evidence and trends. The risk engine and automation workflow handle detection and notification responsibilities.
+
+## 9. Workflow Automation with n8n
+
+The n8n workflow connects detected risk cases to notification and follow-up processes.
+
+### Workflow sequence
+
+1. A manual or scheduled trigger starts the workflow.
+2. n8n queries the relevant Databricks SQL endpoint or alert queue.
+3. Eligible alert records are retrieved.
+4. The workflow prepares the evidence for explanation.
+5. Gemini generates a concise explanation grounded in that evidence.
+6. An email notification is sent to the intended recipient.
+7. Alert and case records are updated where configured.
+
+### Alert information
+
+A useful notification should include:
+
+- Vehicle or asset identifier
+- Risk category and priority
+- Time of detection
+- Supporting evidence
+- Potential business impact, where calculated
+- Recommended next step
+- Responsible owner, where configured
+
+### Tracking and follow-up
+
+Supporting tables such as `gold.alert_log` and `gold.risk_case` can record notification history and case status.
+
+A production implementation should also handle duplicate notifications, failed workflow runs, missing evidence, API errors, and retries.
+
+AI-generated recommendations should remain advisory until reviewed by the responsible person.
+
+## 10. Example Operational Scenario
+
+Consider a truck whose fuel consumption is significantly higher than its historical baseline for comparable operating conditions.
+
+1. Fuel and trip records are cleaned in Silver.
+2. Gold models calculate the relevant trip metrics and fuel-consumption baseline.
+3. The SQL risk engine detects a deviation and creates an alert.
+4. Power BI displays the vehicle and supporting fuel indicators.
+5. n8n retrieves the eligible alert.
+6. Gemini summarizes the observed deviation and the evidence supplied by SQL.
+7. An email informs the responsible fleet manager.
+8. The manager reviews the fuel transaction, route, and sensor records before deciding whether further investigation is needed.
+
+This scenario demonstrates how a data pipeline can connect operational evidence to a human decision instead of stopping at a chart.
+
+## 11. Business Value
+
+The system is designed to support:
+
+- Earlier visibility into potential maintenance issues
+- More consistent vehicle-readiness reviews
+- Faster identification of unusual fuel patterns
+- Improved monitoring of delivery performance
+- Better prioritization of operational cases
+- More traceable alerts and follow-up
+- Reduced manual effort in routine monitoring and communication
+
+Actual savings, reductions in breakdowns, and improvements in fuel efficiency must be measured against a documented baseline after operational deployment. They should not be assumed from the existence of the system alone.
+
+## 12. Data Quality and Validation
+
+Before relying on the outputs operationally, validate the following:
+
+- Fuel-consumption calculations when distance is zero or missing
+- Sufficient historical records for reliable baselines
+- Duplicate fuel-event joins that could inflate totals
+- Consistent definitions of vehicle availability
+- Correct treatment of missing telemetry and sensor readings
+- Meaningful interpretation of driver scorecards
+- Correct joins between vehicles, drivers, routes, trips, and fuel transactions
+- Risk thresholds against real operational examples
+- Alert deduplication and case-status transitions
+- Notification failures and audit logging
+
+Where source data is incomplete, the system should surface the limitation instead of presenting uncertain results as confirmed facts.
+
+## 13. Security and Governance
+
+For a production deployment, the following controls are recommended:
+
+- Use least-privilege access to Databricks data and SQL endpoints.
+- Store API tokens and credentials in approved secret-management facilities.
+- Restrict access to driver, vehicle, and operational records by role.
+- Avoid including unnecessary sensitive information in AI prompts and emails.
+- Log alert generation, delivery, and case updates.
+- Keep human review in place for safety-critical or financially consequential decisions.
+- Document the business meaning and limitations of every risk score.
+
+## 14. Project Limitations
+
+This project is a portfolio demonstration using a fictional trucking company and illustrative operational data. Its findings do not establish the performance of a real fleet deployment.
+
+Key limitations include:
+
+- Synthetic data may not capture every real-world operating condition.
+- Anomaly detection can produce false positives.
+- Prediction quality depends on the quality and quantity of historical data.
+- AI explanations depend on the accuracy and completeness of the supplied evidence.
+- Operational outcomes depend on whether alerts are reviewed and acted upon.
+
+Before real deployment, the system would require validation with actual fleet data, operational stakeholder review, access controls, monitoring, and measured business outcomes.
+
+## 15. Future Improvements
+
+Potential next steps include:
+
+- Calibrating risk thresholds against real maintenance outcomes
+- Measuring precision and recall for predictive alerts
+- Improving fuel baselines for routes with limited history
+- Introducing alert severity and escalation policies
+- Tracking acknowledgement and resolution times
+- Measuring prevented downtime and fuel-cost variance
+- Adding operational feedback to improve rules and models
+- Deploying monitored, scheduled production refreshes
+
+## 16. Conclusion
+
+The Ndovu Haulage Fleet Risk Intelligence System demonstrates how data engineering, business intelligence, risk detection, and workflow automation can work together to support operational decisions.
+
+Its value is not limited to visualizing fleet performance. The architecture connects raw operational records to business-ready data, identifies conditions that require attention, explains the supporting evidence, and helps deliver that information to the people responsible for acting on it.
+
+**The end-to-end principle:**
+
+**Data → Transformation → Risk Detection → Decision Support → Alert → Human Action**
+
+The project showcases a practical approach to building business intelligence systems around operational problems rather than isolated dashboards.
+
+---
+
+**Project name:** Ndovu Haulage — Fleet Risk Intelligence System  
+**Domain:** Fleet Management and Transportation Analytics  
+**Project type:** End-to-End Data Engineering, BI, and AI Workflow  
+**Core technologies:** Databricks, SQL, Power BI, n8n, Gemini AI  
+**Data context:** Fictional Kenyan trucking company with 40 vehicles

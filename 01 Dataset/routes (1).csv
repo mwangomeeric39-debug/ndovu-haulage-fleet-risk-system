@@ -1,0 +1,9 @@
+route_id,route_name,origin,destination,distance_km,terrain_index,elevation_gain_m,corridor
+RT01,Mombasa - Nairobi,Mombasa,Nairobi,485,0.55,1100,Northern Corridor
+RT02,Nairobi - Malaba,Nairobi,Malaba,500,0.75,1500,Northern Corridor
+RT03,Nairobi - Kisumu,Nairobi,Kisumu,345,0.7,1400,Western
+RT04,Nairobi - Eldoret,Nairobi,Eldoret,310,0.65,1300,Western
+RT05,Nairobi - Nakuru,Nairobi,Nakuru,160,0.6,1200,Rift Valley
+RT06,Nairobi - Garissa,Nairobi,Garissa,370,0.3,600,Eastern
+RT07,Mombasa - Taveta,Mombasa,Taveta,330,0.35,700,Southern
+RT08,Nairobi - Namanga,Nairobi,Namanga,165,0.4,800,Southern
